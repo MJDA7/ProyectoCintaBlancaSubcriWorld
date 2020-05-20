@@ -26,6 +26,7 @@
 .navbar-light .navbar-nav .nav-link {
   color: #fff !important;
   margin: 0 7px !important;
+  cursor: pointer;
 }
 
 .navbar-light .navbar-brand{
@@ -100,41 +101,84 @@
 }
 
 
-.contenedorlogin {
-  background-color:#00a5bc;
-  width:30%;
-  height:80%;
-  border:150px 150px 150px;
-  text-align: center;
+
+/* PÁGINA DE FORMULARIO*/
+/*Imagen*/
+
+
+.imagenF img{
+  height: 100vh;
+}
+
+.imagenF h2{
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  top: 20px;
+  left: 30px;
+}
+
+.imagenF p{
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  color: #fff;
+}
+
+.imagenF a {
+  color: #fff;
+}
+
+.imagenF a:hover{
+  color: #FF00FF;
+  text-decoration: none;
 }
 
 
-/*aqui empiezan las tarjetas de servicios*/
 
-.serviciosPadre{
-    width: 100%;
-    height: 900px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around !important;
-    align-content: center;
-    padding: 0 50px !important;
-    background: url("img/bg.jpg");
-    background-size: 1700px 800px;
-    background-repeat: no-repeat;
-    
-    
+.tituloForm {
+  font-weight: 700;
+  font-size: 4em;
+  color: #00C4CC;
+  margin: 0 0 10px 0 !important;
 }
 
-.servicioHijo{
-    width: 27%;
-    margin: 20px 0 !important;
-
-    
+.form-control{
+  width: 100% !important;
+  height: 5vh !important;
+  margin: 20px auto !important;
+  padding-left: 10px !important;
+  background: #E8E8E8 !important;
+  border: none !important;
 }
 
-.servicioHijo img{
-    width: 90%;
-    
+
+.btn-primary{
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 10px;
+  background: #00C4CC !important;
+  border: 1px solid rgb(2, 164, 170) !important;
+  margin-bottom: 15px !important;
 }
 
+.arriba {
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  background: rgba(255, 0, 255, 0.219);
+  position: fixed;
+  right: 40px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.arriba img {
+  width: 15px;
+}
