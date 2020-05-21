@@ -5,30 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log in</title>
 
+    <link rel="icon" type="img/favicon.png" href="img/favicon.png" sizes="64x64">    
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
-    <div class=contenedorlogin>
-        <div class="col-md-6 login-form-1 ">
-                          <h3>Inicia Sesion en Suscriworld</h3>
-                          <form>
-                              <div class="form-group">
-                                  <input type="text" class="form-control" placeholder="Tu Email *" value="" />
-                              </div>
-                              <div class="form-group">
-                                  <input type="password" class="form-control" placeholder="Tu Contraseña *" value="" />
-                              </div>
-                              <div class="form-group">
-                                  <input type="submit" class="btnSubmit" value="Login" />
-                              </div>
-                              <div class="form-group">
-                                  <a href="#" class="ForgetPwd">¿Olvidaste tu contraseña?</a>
-                              </div>
-                          </form>
-                      </div>
-      </div>
 
+<body>
+    <div class=".container-fluid">
+        <!--Imagen-->
+        <div class="row col-12 col-md-12">
+            <div class="col-12 col-md-6 imagenF d-flex justify-content-center ">
+                <h2>SubcriWorld</h2>
+                <img src="img/Formulario.jpg" alt="">
+                <p><a href="index.html">Regresar</a></p>
+            </div>
+        
+
+            <!--Formulario-->
+            <div class="row col-12 col-md-6 d-flex justify-content-center align-content-center ">    
+                <div class="FormularioLog text-center ">
+                    <h1 class="tituloForm">Inicia Sesión</h1>
+                    <form class="camposForm">
+                        <input type="email" class="form-control" placeholder="Correo electrónico *" value="" />
+                        <input type="password" class="form-control" placeholder="Contraseña *" value="" />
+                        <div>
+                            <button class="btn-primary" type="submit">Login</button>                        
+                        </div>
+                        <a href="#" class="ForgetPwd">¿Olvidaste tu contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
