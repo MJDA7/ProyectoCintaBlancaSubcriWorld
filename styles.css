@@ -182,3 +182,8 @@
 .arriba img {
   width: 15px;
 }
+
+.container4 {
+  border-top: 150px solid white;
+  border-bottom: 50px solid white;
+}
