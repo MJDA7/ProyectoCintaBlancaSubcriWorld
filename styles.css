@@ -102,14 +102,24 @@
 }
 
 .paddingAcercaDe{
-  width: 80% !important;
-  padding-left: 80px !important;
-  padding-top: 60px !important;
-  margin-top: 20px !important;
+  width: 72% !important;
+  padding: 0 20px !important;
+  text-align: center;
+  margin: 116px auto !important;
 }
 
 .paddingAcercaDe p{
   margin-top: 20px !important;
+}
+
+/* Productos*/
+
+.Productos{
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+}
+.card-body {
+  text-align: center;
 }
 
 /* Carrusel*/
@@ -142,6 +152,25 @@
   width: 40%;
 }
 
+
+/* Planes*/
+.list-group-item {
+  border: none !important;
+  text-align: center;
+  background: #fff;
+}
+
+.tarjetasPlanes{
+  width: 85%;
+  margin: 50px auto 60px auto !important;
+}
+
+.container4{
+  .container4 {
+    border: 0 !important;
+    border-bottom: 0 !important;
+}
+}
 
 /* Footer*/
 .news{
@@ -288,4 +317,163 @@
 .container4 {
   border-top: 150px solid white;
   border-bottom: 50px solid white;
+}
+
+
+/* MEDIA QUERY*/
+@media screen and (max-width: 768px) {
+
+  .header .navbar {
+    padding: 20px 20px !important;
+  }
+
+  .inicio {
+    width: 90%;
+    margin: auto !important;
+  }
+
+  .inicio h1 {
+    font-size: 4em;
+  }
+
+  .h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .paddingAcercaDe {
+    margin: -20px auto !important;
+    padding: 0 20px 0 20px !important;
+  }
+
+  .p-acercaDe{
+    margin: auto;
+    text-align: center;
+
+  }
+
+  .display-4 {
+    font-size: 2.5rem !important;
+    line-height: 2.5rem !important;
+  }
+
+  .carousel-item div{
+    height: 300px;
+  }
+
+  .container4 {
+    border-top:0; 
+    border-bottom: 50px solid white;
+}
+
+  .news h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container4 {
+    border-top: 0;
+    border-bottom: 0;
+  }
+
+  .inicio h1 {
+    width: 85%;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 81px !important;
+  }
+
+  .inicio h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 37px !important;
+  }
+
+  .header .navbar {
+    padding: 20px 18px !important;
+  }
+
+  .carousel-item div{
+    height: 300px !important;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+  .inicio h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0 37px !important;
+  }
+
+  .inicio h1 {
+    width: 85%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 81px !important;
+  }
+
+  .header .navbar {
+    padding: 10px 18px !important;
+  }
+
+  
+}
+
+@media screen and (max-width: 320px) {
+
+  .header {
+    background-position-x: 80%;
+    background-position-y: center;
+  }
+
+  .inicio h1 {
+    width: 85%;
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-top: 51px !important;
+  }
+
+  .inicio h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 0 37px !important;
+  }
+
+  .header .navbar {
+    padding: 20px 18px !important;
+  }
+
+  .paddingAcercaDe {
+    width: 95% !important;
+    padding: 0 20px !important;
+    text-align: center;
+  }
+
+  .carousel-item div{
+    height: 300px;
+  }
+
+  .carousel-item p {
+    font-weight: 500;
+    font-size: 1rem;
+    width: 80%;
+  }
+
+  .container4 {
+    border-top: 10px solid white;
+  }
+
+  .news h2 {
+    color: #fff;
+    font-size: 2.2rem;
+    padding: 0 22px !important;
+
+}
 }
