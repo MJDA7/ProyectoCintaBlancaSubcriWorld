@@ -299,8 +299,9 @@
 }
 
 .imagenF a:hover{
-  color: #FF00FF;
   text-decoration: none;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 
@@ -322,15 +323,7 @@
 }
 
 
-.correoN .btn-primary{
-  width: 150px;
-  height: 30px;
-  display: inline-block;
-  border-radius: 10px;
-  background: #00C4CC !important;
-  border: 1px solid rgb(2, 164, 170) !important;
-  margin-bottom: 15px !important;
-}
+
 
 .arriba {
   width: 40px;
@@ -357,6 +350,42 @@
   border-bottom: 50px solid white;
 }
 
+/* PÁGINA DE PRODUCTOS*/
+/*Header*/
+.headerProductos{
+  background-image: url("img/ProductoBG.jpg");
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.headerProductos .navbar-light .navbar-brand,
+.headerProductos .navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+  margin: 0 7px !important;
+  cursor: pointer;
+}
+
+.headerProductos  .navbar-light .navbar-brand{
+  font-weight: 700;
+  font-size: 30px;
+}
+.headerProductos .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
+  transform: scale(1.1);
+}
+
+
+.headerProductos .nav-item .bt-log:hover {
+  transform: scale(1.1);
+}
+
+/* Cards*/
+
+
+            
 
 /* MEDIA QUERY*/
 @media screen and (max-width: 768px) {
@@ -457,6 +486,11 @@
     padding: 20px 18px !important;
   }
 
+  .paddingAcercaDe {
+    margin: 0px auto 50px auto !important;
+    padding: 0 !important;
+  }
+
   .carousel-item div{
     height: 300px !important;
   }
@@ -470,6 +504,12 @@
     left: 50px !important;
     top: 162px !important;
   }
+
+  .correoN {
+    width: 70% !important;
+
+  }
+  
 
 }
 
@@ -497,10 +537,10 @@
     width: 60%;
   }
 
-    .carousel-control-next {
-      right: 120px !important;
-      top: 250px !important;
-    }
+  .carousel-control-next {
+     right: 120px !important;
+     top: 250px !important;
+   }
     
     .carousel-control-prev {
       left: 120px !important;
