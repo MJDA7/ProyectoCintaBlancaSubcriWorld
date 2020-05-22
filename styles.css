@@ -247,10 +247,6 @@
 
 
 
-.btn:hover{
-  background: #00C4CC !important;
-}
-
 .redes{
   width: 100%;
 }
@@ -300,7 +296,7 @@
 
 .imagenF a:hover{
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   transform: scale(1.1);
 }
 
@@ -394,6 +390,10 @@
     padding: 20px 20px !important;
   }
 
+  .navbar-light .navbar-brand:hover, .navbar-light .navbar-nav .nav-link:hover{
+    transform: scale(1);
+  }
+
   .inicio {
     width: 90%;
     margin: auto !important;
@@ -419,8 +419,9 @@
   }
 
   .Productos{
-    height: auto;
-  }
+  background-position-x: center;
+  height: auto;
+}
 
   .container3 {
   margin-top: 40px !important;
@@ -458,7 +459,11 @@
 
   .justify-content-center {
     justify-content: start !important;
-}
+  }
+
+  .tituloForm {
+    margin: 52px 0 8px 0 !important;
+  }
 }
 
 @media screen and (max-width: 425px) {
@@ -509,7 +514,22 @@
     width: 70% !important;
 
   }
+
+  .inicio button{
+    width: 25vw;
+  }
+
+  .Productos{
+    background: #fff;
+  }
   
+  .imagenF img {
+    height: auto;
+    width: 100%;
+}
+.imagenF p {
+  display: none;
+}
 
 }
 
@@ -614,6 +634,17 @@
     color: #fff;
     font-size: 2.2rem;
     padding: 0 22px !important;
+  }
 
+  .inicio button{
+    width: 50vw;
+  }
+
+  .imagenF h2 {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    top: 10px;
+    left: 13px;
 }
 }
