@@ -9,138 +9,164 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <h1>Productos</h1>
 
-<!--Navbar-->
+    <div class="container-fluid">
+        <!--Header-->
+        <div class="headerProductos px-4">
+            
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a href="index.html" class="navbar-brand">SuscriWorld</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="nosotros()">Nosotros<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="productos()">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="planes()">Planes</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="btn btn-primary" href="login.html">Log in</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">SuscriWorld</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-   
-        <div class="collapse navbar-collapse justify-content-end"  id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Nosotros<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Planes</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link bt-log" href="login.html">Log in</a>
-                </li>
-            </ul>
+            <div class="inicio">  
+                <h1 class="h1">Descubre nuestros productos</h1>
+            </div>
         </div>
-    </nav>
+        
+        <!--Tarjetas-->
+        <div class="col-sm-12 px-4">
 
-<!--Primer producto-->
-<div class= "row">
-    <div class="col-sm-4">
-        <div class="card text-white bg-dark mb-3 card border-danger mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="img/Netflix.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Netflix</h3>
-                <p class="card-text">Un lugar donde puedes encontrar series exculsivas como "The Crown" o "Stranger Things" no te pierdas de estas grandiosas películas y series.</p>
-                <a href="#" class="btn btn-primary">Compralo aquí</a>
+            <!--Primera Fila-->
+            <div class="row px-4">
+                <!--Primer producto-->
+                <div class="col-sm-6 d-flex justify-content-center">
+                        <div class="card bg-transparent text-dark border-0">
+                            <div class="row no-gutters">
+                                <div class="col-sm-12 col-lg-6">
+                                    <img src="img/Netflix.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card-body ">
+                                        <h3 class="card-title text-info">Netflix</h3>
+                                        <p class="card-text">Un lugar donde puedes encontrar series exculsivas como "The Crown" o "Stranger Things" no te pierdas de estas grandiosas películas y series.</p>
+                                        <a href="#" class="btn btn-primary">Compralo aquí</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <!--Segundo Producto-->
+                <div class="col-sm-6 d-flex justify-content-center">
+                        <div class="card bg-transparent text-dark border-0">
+                            <div class="row no-gutters">
+                                <div class="col-sm-12 col-lg-6">
+                                    <img src="img/spotify.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-info">Spotify</h3>
+                                        <p class="card-text">Es el lugar perfecto para escuchar todo tipo de música. Encuentra aquí estilos unicos como Rock, Pop, Reggeton, además de playlists excusivas hechas para ti</p>
+                                        <a href="#" class="btn btn-primary">Compralo aquí</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 </div>
             </div>
+
+            <!--Segunda fila-->
+            <div class="row px-4">
+                <!--Tercer Producto-->
+                <div class="col-sm-6 d-flex justify-content-center">
+                        <div class="card bg-transparent text-dark border-0">
+                            <div class="row no-gutters">
+                                <div class="col-sm-12 col-lg-6">
+                                    <img src="img/Hbo.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-info">HBO</h3>
+                                        <p class="card-text">Aquí puedes encontrar las películas del momento, además de series excusivas muy pedidas por el público como "Game of Thrones"</p>
+                                        <a href="#" class="btn btn-primary">Compralo aquí</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+                <!--Cuarto Producto-->
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card bg-transparent text-dark border-0" >
+                            <div class="row no-gutters">
+                                <div class="col-sm-12 col-lg-6">
+                                    <img src="img/PrimeVideo.jpg" class="card-img" alt="...">
+                                </div>
+                                <div class="col-sm-12 col-lg-6">
+                                    <div class="card-body">
+                                        <h3 class="card-title text-info">Prime Video</h3>
+                                        <p class="card-text">Es el lugar perfecto para relajarse al ver películas y series de las más esperadas y recomendadas como "The Good Doctor" o "The Big Ban Theory"</p>
+                                        <a href="#" class="btn btn-primary">Compralo aquí</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </div>
-    </div>
-<!--Segundo Producto-->
-    <div class="col-sm-4">
-      <div class="card text-white bg-dark mb-3 card border-success mb-3" style="max-width: 540px;">
-        <div class="row no-gutters">
-          <div class="col-md-4">
-            <img src="img/spotify.jpg" class="card-img" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h3 class="card-title">Spotify</h3>
-              <p class="card-text">Es el lugar perfecto para escuchar todo tipo de música. Encuentra aquí estilos unicos como Rock, Pop, Reggeton, además de playlists excusivas hechas para ti</p>
-              <a href="#" class="btn btn-primary">Compralo aquí</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-<!--Tercer Producto-->
-    <div class="col-sm-4">
-        <div class="card text-white bg-dark mb-3 card border-info mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="img/Hbo.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">HBO</h3>
-                <p class="card-text">Aquí puedes encontrar las películas del momento, además de series excusivas muy pedidas por el público como "Game of Thrones"</p>
-                <a href="#" class="btn btn-primary">Compralo aquí</a>
+            
+
+            <!--Tercer fila-->
+            <div class="row px-4">
+                <!--Quinto Producto-->
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <div class="card bg-transparent text-dark border-0" >
+                        <div class="row no-gutters">
+                            <div class="col-sm-12 col-lg-6">
+                                <img src="img/Hulu.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-sm-12 col-lg-6">
+                                <div class="card-body align-content-center ">
+                                    <h3 class="card-title text-info">Hulu</h3>
+                                    <p class="card-text">Aquí puedes encontrar todo tipo de películas y series, tan cerca de un click podrías ver las películas recien salidas del cine, no te pierdas de esta oportuniad única"</p>
+                                    <a href="#" class="btn btn-primary">Compralo aquí</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Sexto Producto-->
+                <div class="col-sm-6  d-flex justify-content-center">
+                    <div class="card bg-transparent text-dark border-0" >
+                        <div class="row no-gutters">
+                            <div class="col-sm-12 col-lg-6">
+                                <img src="img/Disney.jpg" class="card-img" alt="...">
+                            </div>
+                            <div class="col-sm-12 col-lg-6 ">
+                                <div class="card-body">
+                                    <h3 class="card-title text-info">Disney</h3>
+                                    <p class="card-text">¿Eres fan de Disney? si lo eres, esta es tu mejor opción. Al comprar este servicio, podrás tener acceso a todas las pelícuals y series de Disney</p>
+                                    <a href="#" class="btn btn-primary">Compralo aquí</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            </div>
         </div>
+
     </div>
-<!--Cuarto Producto-->
-    <div class="col-sm-4">
-        <div class="card text-white bg-dark mb-3 card border-info mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="img/PrimeVideo.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Prime Video</h3>
-                <p class="card-text">Es el lugar perfecto para relajarse al ver películas y series de las más esperadas y recomendadas como "The Good Doctor" o "The Big Ban Theory"</p>
-                <a href="#" class="btn btn-primary">Compralo aquí</a>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-<!--Quinto Producto-->
-    <div class="col-sm-4">
-        <div class="card text-white bg-dark mb-3 card border-success mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="img/Hulu.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Hulu</h3>
-                <p class="card-text">Aquí puedes encontrar todo tipo de películas y series, tan cerca de un click podrías ver las películas recien salidas del cine, no te pierdas de esta oportuniad única</p>
-                <a href="#" class="btn btn-primary">Compralo aquí</a>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-<!--Sexto Producto-->
-    <div class="col-sm-4">
-        <div class="card text-white bg-dark mb-3 card border-primary mb-3" style="max-width: 540px;">
-            <div class="row no-gutters">
-            <div class="col-md-4">
-                <img src="img/Disney.jpg" class="card-img" alt="...">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                <h3 class="card-title">Disney +</h3>
-                <p class="card-text">¿Eres fan de Disney? si lo eres, esta es tu mejor opción. Al comprar este servicio, podrás tener acceso a todas las pelícuals y series de Disney</p>
-                <a href="#" class="btn btn-primary">Compralo aquí</a>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
+        
 
 
 
