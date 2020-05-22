@@ -14,7 +14,7 @@ function productos(){
 
 function planes(){
     window.scrollTo({
-        top: 2650,
+        top: 2350,
         behavior: 'smooth'
     });
 }
