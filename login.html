@@ -25,19 +25,20 @@
             <div class="row col-12 col-md-6 d-flex justify-content-center align-content-center ">    
                 <div class="FormularioLog text-center ">
                     <h1 class="tituloForm">Inicia Sesión</h1>
-                    <form class="camposForm">
-                        <input type="email" class="form-control" placeholder="Correo electrónico *" value="" />
-                        <input type="password" class="form-control" placeholder="Contraseña *" value="" />
+                    <div class="camposForm">
+                        <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico *" value="" />
+                        <input type="password" name="password" id="password"class="form-control" placeholder="Contraseña *" value="" />
                         <div>
-                            <button class="btn-primary" type="submit">Login</button>                        
+                            <button class="btn-primary" onclick="login()">Login</button>                        
                         </div>
                         <a href="#" class="ForgetPwd">¿Olvidaste tu contraseña?</a>
                         </div>
-                    </form>
+                </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
+    <script src="script.js"></script>
 </body>
 </html>
